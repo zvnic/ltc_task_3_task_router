@@ -117,13 +117,7 @@ function ShellContent({ showLogout }: { showLogout: boolean }) {
           })}
         </nav>
         <div className="mt-auto space-y-3">
-          <button
-            type="button"
-            onClick={() => void onLogout()}
-            className="w-full rounded-lg border border-slate-700 px-3 py-2 text-left text-sm text-slate-300 transition hover:bg-slate-800 hover:text-white"
-          >
-            Выйти
-          </button>
+          <LogoutButton visible={showLogout} onLogout={onLogout} />
           <div className="rounded-lg border border-slate-700 p-3 text-xs leading-5 text-slate-400">
             Расчётная модель<br /><span className="text-slate-200">3 зоны · 1 день</span>
           </div>
@@ -169,5 +163,19 @@ function ShellContent({ showLogout }: { showLogout: boolean }) {
         </nav>
       </div>
     </div>
+  )
+}
+
+export function LogoutButton({ visible, onLogout }: { visible: boolean; onLogout: () => Promise<void> }) {
+  if (!visible) return null
+
+  return (
+    <button
+      type="button"
+      onClick={() => void onLogout()}
+      className="w-full rounded-lg border border-slate-700 px-3 py-2 text-left text-sm text-slate-300 transition hover:bg-slate-800 hover:text-white"
+    >
+      Выйти
+    </button>
   )
 }
