@@ -2,7 +2,7 @@
 .DS_Store
 **/.DS_Store
 .idea/
-.vscode/*.local.json
+.vscode/
 artifacts/*
 !artifacts/.gitkeep
 data/inbox/*
