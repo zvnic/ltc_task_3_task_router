@@ -283,10 +283,10 @@ export const apiClient = {
     id: string,
     payload: {
       expected_revision: number
-      duration_minutes: number
+      duration_minutes?: number
       expected_duration_minutes?: number
-      priority: 'normal' | 'urgent'
-      status: import('./types').RequestStatus
+      priority?: 'normal' | 'urgent'
+      status?: import('./types').RequestStatus
     },
   ) => api<{ revision: number }>(`/requests/${id}`, { method: 'PATCH', body: JSON.stringify(payload) }),
   patchEngineer: (

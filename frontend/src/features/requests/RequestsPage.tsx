@@ -13,6 +13,7 @@ import {
   WORK_CLASS_LABELS,
   workClassBadgeTone,
 } from '../planning/request-kind'
+import { buildRequestPatchPayload, isNormControlledRequest } from './request-patch'
 
 const skillLabels = { local: 'Локальные', connection: 'Подключение', emergency: 'Аварийные' } as const
 const statusLabels: Record<RequestStatus, string> = {
@@ -248,14 +249,18 @@ function RequestDrawer({
   const [duration, setDuration] = useState(request.duration_minutes)
   const [priority, setPriority] = useState<'normal' | 'urgent'>(request.priority)
   const [status, setStatus] = useState<RequestStatus>(request.status)
+  const normControlled = isNormControlledRequest(request)
+  const expectedDuration = request.expected_duration_minutes ?? request.duration_minutes
   const mutation = useMutation({
     mutationFn: () =>
-      apiClient.patchRequest(request.id, {
-        expected_revision: revision,
-        duration_minutes: duration,
-        priority,
-        status,
-      }),
+      apiClient.patchRequest(
+        request.id,
+        buildRequestPatchPayload(request, revision, {
+          duration_minutes: duration,
+          priority,
+          status,
+        }),
+      ),
     onSuccess: onSaved,
   })
   function submit(event: FormEvent) {
@@ -325,17 +330,34 @@ function RequestDrawer({
         </dl>
         <form className="mt-6 space-y-4 border-t pt-5" onSubmit={submit}>
           <h3 className="font-semibold">Редактирование исходных данных</h3>
-          <label className="block text-sm font-medium">
-            Длительность, мин
-            <input
-              type="number"
-              min={1}
-              max={720}
-              value={duration}
-              onChange={(event) => setDuration(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border px-3 py-2"
-            />
-          </label>
+          {normControlled ? (
+            <div className="rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm">
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-medium">Длительность</span>
+                <span className="font-semibold">
+                  {expectedDuration} мин
+                  {expectedDuration < request.duration_minutes
+                    ? ` / слот ${request.duration_minutes} мин`
+                    : ''}
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-muted">
+                Значение управляется централизованно в разделе «Нормативы».
+              </p>
+            </div>
+          ) : (
+            <label className="block text-sm font-medium">
+              Длительность, мин
+              <input
+                type="number"
+                min={1}
+                max={720}
+                value={duration}
+                onChange={(event) => setDuration(Number(event.target.value))}
+                className="mt-1 w-full rounded-lg border px-3 py-2"
+              />
+            </label>
+          )}
           <label className="block text-sm font-medium">
             Приоритет
             <select
