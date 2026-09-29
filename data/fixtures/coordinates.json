@@ -1,0 +1,19 @@
+{
+  "version": "1",
+  "source": "synthetic",
+  "description": "Демонстрационные точки внутри районов; не являются результатом точного геокодирования.",
+  "office": {"latitude": 55.7048, "longitude": 37.7662},
+  "district_centers": {
+    "Кузьминки": {"latitude": 55.7051, "longitude": 37.7668},
+    "Таганский": {"latitude": 55.7417, "longitude": 37.6536},
+    "Текстильщики": {"latitude": 55.7088, "longitude": 37.7316},
+    "Рязанский": {"latitude": 55.7165, "longitude": 37.7916},
+    "Южнопортовый": {"latitude": 55.7182, "longitude": 37.6717},
+    "Нижегородский": {"latitude": 55.7280, "longitude": 37.7148},
+    "Лефортово": {"latitude": 55.7583, "longitude": 37.7057},
+    "Выхино": {"latitude": 55.7156, "longitude": 37.8181},
+    "Басманный": {"latitude": 55.7660, "longitude": 37.6688}
+  },
+  "stable_offset_degrees": 0.003
+}
+

@@ -1,0 +1,41 @@
+{
+  "version": "customer_norms_v2",
+  "source": "Нормативы.xlsx:b82b3f1062be039835086c0471fd0247e0bf2de42d8c3e5cf9a59f4cf8c8482b",
+  "work_types": {
+    "Локальная заявка": {
+      "norm_id": "local_repair",
+      "required_skill": "local",
+      "technical_minutes": 30,
+      "paperwork_minutes": 0,
+      "travel_norm_minutes": 20,
+      "duration_minutes": 30
+    },
+    "Подключение": {
+      "norm_id": "connection_basic",
+      "required_skill": "connection",
+      "technical_minutes": 60,
+      "paperwork_minutes": 10,
+      "travel_norm_minutes": 20,
+      "duration_minutes": 70
+    },
+    "Дозаказ": {
+      "norm_id": "add_order",
+      "required_skill": "connection",
+      "technical_minutes": 10,
+      "paperwork_minutes": 10,
+      "travel_norm_minutes": 20,
+      "duration_minutes": 20
+    },
+    "Глобальная проблема": {
+      "norm_id": "tkd_emergency",
+      "required_skill": "emergency",
+      "technical_minutes": 80,
+      "paperwork_minutes": 0,
+      "travel_norm_minutes": 20,
+      "duration_minutes": 80
+    }
+  },
+  "urgent_subtypes": ["Авария"],
+  "assumed_norm_subtypes": ["Авария"],
+  "default_required_transport": null
+}

@@ -1,0 +1,22 @@
+{
+  "event_id": "event-urgent-001",
+  "idempotency_key": "demo-urgent-2026-08-17-001",
+  "event_time": "2026-08-17T14:20:00+03:00",
+  "expected_revision": 1,
+  "request": {
+    "id": "urgent-demo-001",
+    "external_id": "URG-001",
+    "input_order": 100,
+    "address": "г. Москва, Волгоградский проспект, д. 100",
+    "district": "Кузьминки",
+    "coordinates": {"latitude": 55.7105, "longitude": 37.7705},
+    "coordinate_source": "synthetic",
+    "duration_minutes": 80,
+    "window_start": "2026-08-17T14:20:00+03:00",
+    "window_end": "2026-08-17T16:00:00+03:00",
+    "required_skill": "emergency",
+    "required_transport": null,
+    "priority": "urgent",
+    "source_fields": {"origin": "demo urgent event"}
+  }
+}

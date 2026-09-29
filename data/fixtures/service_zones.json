@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "source": "project_assumption",
+  "description": "Зоны, координаты офисов и характеристики исполнителей являются демонстрационным обогащением; адрес офиса каждой зоны берётся из office_address, и все маршруты зоны начинаются в этом офисе.",
+  "zones": [
+    {
+      "code": "vostok",
+      "name": "Восток",
+      "title": "Восток · 17 августа 2026",
+      "synthetic_file": "vostok_synthetic_utf8.csv",
+      "control_file": "vostok_control_utf8.csv",
+      "fingerprint": "beeline-vostok-demo-v1",
+      "geography_note": "Москва, восточный диспетчерский контур.",
+      "office_address": "г. Москва, ул Юных Ленинцев, д 83с 4",
+      "office": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "district_centers": {
+        "Кузьминки": {
+          "latitude": 55.7051,
+          "longitude": 37.7668
+        },
+        "Таганский": {
+          "latitude": 55.7417,
+          "longitude": 37.6536
+        },
+        "Текстильщики": {
+          "latitude": 55.7088,
+          "longitude": 37.7316
+        },
+        "Рязанский": {
+          "latitude": 55.7165,
+          "longitude": 37.7916
+        },
+        "Южнопортовый": {
+          "latitude": 55.7182,
+          "longitude": 37.6717
+        },
+        "Нижегородский": {
+          "latitude": 55.728,
+          "longitude": 37.7148
+        },
+        "Лефортово": {
+          "latitude": 55.7583,
+          "longitude": 37.7057
+        },
+        "Выхино": {
+          "latitude": 55.7156,
+          "longitude": 37.8181
+        },
+        "Басманный": {
+          "latitude": 55.766,
+          "longitude": 37.6688
+        }
+      },
+      "engineer_names": [
+        "Бригада Соколов",
+        "Бригада Мельников",
+        "Бригада Матвеев",
+        "Бригада Попов",
+        "Бригада Арташкин",
+        "Бригада Комарь",
+        "Бригада Каушнян",
+        "Бригада Зверев",
+        "Бригада Перов",
+        "Бригада Белузин",
+        "Бригада Гусаковский",
+        "Бригада Свеженцев"
+      ],
+      "start_policy": "office_address",
+      "is_demo": true
+    },
+    {
+      "code": "yugo_vostok",
+      "name": "Юго-восток",
+      "title": "Юго-восток · 17 августа 2026",
+      "synthetic_file": "yugo_vostok_synthetic_utf8.csv",
+      "control_file": "yugo_vostok_control_utf8.csv",
+      "fingerprint": "beeline-yugo-vostok-demo-v1",
+      "geography_note": "Московский диспетчерский контур, включающий Москву и города Московской области: Домодедово, Каширу и Ступино. Все маршруты зоны начинаются из офиса на Бирюлёвской улице.",
+      "office_address": "г. Москва, ул Бирюлёвская, д 1с1",
+      "office": {
+        "latitude": 55.5915,
+        "longitude": 37.6764
+      },
+      "district_centers": {
+        "Бирюлево Восточное": {
+          "latitude": 55.5904,
+          "longitude": 37.678
+        },
+        "Бирюлево Западное": {
+          "latitude": 55.5852,
+          "longitude": 37.6425
+        },
+        "Москворечье - Сабурово": {
+          "latitude": 55.6412,
+          "longitude": 37.6668
+        },
+        "Зябликово": {
+          "latitude": 55.6208,
+          "longitude": 37.7477
+        },
+        "Братеево": {
+          "latitude": 55.6357,
+          "longitude": 37.7658
+        },
+        "Орехово Борисово Северное": {
+          "latitude": 55.6188,
+          "longitude": 37.7067
+        },
+        "Орехово Борисово Южное": {
+          "latitude": 55.6038,
+          "longitude": 37.7312
+        },
+        "Домодедово": {
+          "latitude": 55.4364,
+          "longitude": 37.766
+        },
+        "Кашира": {
+          "latitude": 54.8534,
+          "longitude": 38.1908
+        },
+        "Ступино": {
+          "latitude": 54.9008,
+          "longitude": 38.0708
+        },
+        "Царицыно": {
+          "latitude": 55.6214,
+          "longitude": 37.6698
+        }
+      },
+      "engineer_names": [
+        "Бригада Паршин",
+        "Бригада Андреев",
+        "Бригада Белоновский",
+        "Бригада Рыбин",
+        "Бригада Горбанев",
+        "Бригада Бузань",
+        "Бригада Козырь",
+        "Бригада Царьков",
+        "Бригада Саламатин",
+        "Бригада Макаров",
+        "Бригада Каушнян",
+        "Бригада Демин"
+      ],
+      "start_policy": "office_address",
+      "is_demo": true
+    },
+    {
+      "code": "yugocenter",
+      "name": "Югоцентр",
+      "title": "Югоцентр · 17 августа 2026",
+      "synthetic_file": "yugocenter_synthetic_utf8.csv",
+      "control_file": "yugocenter_control_utf8.csv",
+      "fingerprint": "beeline-yugocenter-demo-v1",
+      "geography_note": "Москва, южный и центральный диспетчерский контур.",
+      "office_address": "г. Москва, проезд Симферопольский, д. 7",
+      "office": {
+        "latitude": 55.6523,
+        "longitude": 37.6134
+      },
+      "district_centers": {
+        "Гагаринский": {
+          "latitude": 55.6932,
+          "longitude": 37.5437
+        },
+        "Зюзино": {
+          "latitude": 55.655,
+          "longitude": 37.59
+        },
+        "Котловка": {
+          "latitude": 55.676,
+          "longitude": 37.598
+        },
+        "Замоскворечье": {
+          "latitude": 55.7355,
+          "longitude": 37.6355
+        },
+        "Даниловский": {
+          "latitude": 55.7085,
+          "longitude": 37.6255
+        },
+        "Хамовники": {
+          "latitude": 55.7335,
+          "longitude": 37.5715
+        },
+        "Нагатинский Затон": {
+          "latitude": 55.683,
+          "longitude": 37.7
+        },
+        "Нагатино - Садовники": {
+          "latitude": 55.6725,
+          "longitude": 37.646
+        },
+        "Нагорный": {
+          "latitude": 55.6673,
+          "longitude": 37.6125
+        },
+        "Академический": {
+          "latitude": 55.6877,
+          "longitude": 37.575
+        },
+        "Донской": {
+          "latitude": 55.706,
+          "longitude": 37.6
+        },
+        "GPON Даниловский": {
+          "latitude": 55.7085,
+          "longitude": 37.6255
+        }
+      },
+      "engineer_names": [
+        "Капитанчук Александр",
+        "Исхаков Денис",
+        "Брюзгин Ярослав",
+        "Бахарев Андрей",
+        "Прокопенко Вячеслав",
+        "Выговский Сергей",
+        "Данилов Даниил",
+        "Переладов Алексей",
+        "Сакур Тимофей",
+        "Рыбалкин Егор",
+        "Ионов Геннадий"
+      ],
+      "start_policy": "office_address",
+      "is_demo": true
+    }
+  ],
+  "stable_offset_degrees": 0.003
+}

@@ -1,0 +1,64 @@
+{
+  "version": "1",
+  "description": "Синтетические граничные случаи. Не являются исходными данными Билайн.",
+  "strict_improvement": {
+    "dataset_id": "fixture-strict-improvement",
+    "revision": 1,
+    "planning_date": "2026-08-17",
+    "timezone": "Europe/Moscow",
+    "route_estimation_method": "haversine_by_transport_v3",
+    "requests": [
+      {
+        "id": "late-first",
+        "external_id": "FIX-LATE",
+        "input_order": 0,
+        "address": "Позднее окно",
+        "district": "Кузьминки",
+        "coordinates": {"latitude": 55.7052, "longitude": 37.7669},
+        "coordinate_source": "synthetic",
+        "duration_minutes": 60,
+        "window_start": "2026-08-17T12:00:00+03:00",
+        "window_end": "2026-08-17T14:00:00+03:00",
+        "required_skill": "local",
+        "required_transport": null,
+        "priority": "normal",
+        "source_fields": {"fixture": "strict_improvement"}
+      },
+      {
+        "id": "early-second",
+        "external_id": "FIX-EARLY",
+        "input_order": 1,
+        "address": "Раннее окно",
+        "district": "Кузьминки",
+        "coordinates": {"latitude": 55.7053, "longitude": 37.7670},
+        "coordinate_source": "synthetic",
+        "duration_minutes": 60,
+        "window_start": "2026-08-17T10:00:00+03:00",
+        "window_end": "2026-08-17T12:00:00+03:00",
+        "required_skill": "local",
+        "required_transport": null,
+        "priority": "normal",
+        "source_fields": {"fixture": "strict_improvement"}
+      }
+    ],
+    "engineers": [
+      {
+        "id": "fixture-engineer",
+        "external_id": "FIX-ENG",
+        "input_order": 0,
+        "name": "Тестовая бригада",
+        "start_location": {"latitude": 55.7051, "longitude": 37.7668},
+        "shift_start": "2026-08-17T08:00:00+03:00",
+        "shift_end": "2026-08-17T18:00:00+03:00",
+        "skills": ["local"],
+        "transport": "walking",
+        "is_synthetic": true
+      }
+    ]
+  },
+  "transport_mismatch": {
+    "required_transport": "car",
+    "available_transport": "walking",
+    "expected_reason_code": "transport_mismatch"
+  }
+}

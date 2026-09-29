@@ -1,0 +1,3 @@
+# Скрипты запускаются внутри Linux-контейнеров: с CRLF bash падает на `bash\r`,
+# и api уходит в цикл перезапусков (так было с docker-entrypoint.sh на Windows).
+*.sh text eol=lf

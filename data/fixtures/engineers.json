@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "is_synthetic": true,
+  "engineers": [
+    {
+      "external_id": "team-01",
+      "name": "Бригада Соколов",
+      "input_order": 0,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T08:00:00+03:00",
+      "shift_end": "2026-08-17T18:00:00+03:00",
+      "skills": [
+        "connection",
+        "local"
+      ],
+      "transport": "car"
+    },
+    {
+      "external_id": "team-02",
+      "name": "Бригада Мельников",
+      "input_order": 1,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T08:00:00+03:00",
+      "shift_end": "2026-08-17T20:00:00+03:00",
+      "skills": [
+        "local",
+        "emergency"
+      ],
+      "transport": "public_transport"
+    },
+    {
+      "external_id": "team-03",
+      "name": "Бригада Матвеев",
+      "input_order": 2,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T09:00:00+03:00",
+      "shift_end": "2026-08-17T19:00:00+03:00",
+      "skills": [
+        "connection"
+      ],
+      "transport": "car"
+    },
+    {
+      "external_id": "team-04",
+      "name": "Бригада Попов",
+      "input_order": 3,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T10:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "local",
+        "connection",
+        "emergency"
+      ],
+      "transport": "car"
+    },
+    {
+      "external_id": "team-05",
+      "name": "Бригада Арташкин",
+      "input_order": 4,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T10:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "local"
+      ],
+      "transport": "walking"
+    },
+    {
+      "external_id": "team-06",
+      "name": "Бригада Комарь",
+      "input_order": 5,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T10:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "connection",
+        "emergency"
+      ],
+      "transport": "public_transport"
+    },
+    {
+      "external_id": "team-07",
+      "name": "Бригада Каушнян",
+      "input_order": 6,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T11:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "connection",
+        "local"
+      ],
+      "transport": "bicycle"
+    },
+    {
+      "external_id": "team-08",
+      "name": "Бригада Зверев",
+      "input_order": 7,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T12:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "emergency"
+      ],
+      "transport": "car"
+    },
+    {
+      "external_id": "team-09",
+      "name": "Бригада Перов",
+      "input_order": 8,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T12:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "local",
+        "connection"
+      ],
+      "transport": "walking"
+    },
+    {
+      "external_id": "team-10",
+      "name": "Бригада Белузин",
+      "input_order": 9,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T12:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "connection",
+        "emergency"
+      ],
+      "transport": "bicycle"
+    },
+    {
+      "external_id": "team-11",
+      "name": "Бригада Гусаковский",
+      "input_order": 10,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T12:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "local",
+        "emergency"
+      ],
+      "transport": "public_transport"
+    },
+    {
+      "external_id": "team-12",
+      "name": "Бригада Свеженцев",
+      "input_order": 11,
+      "start_location": {
+        "latitude": 55.7048,
+        "longitude": 37.7662
+      },
+      "shift_start": "2026-08-17T12:00:00+03:00",
+      "shift_end": "2026-08-17T22:00:00+03:00",
+      "skills": [
+        "local",
+        "connection",
+        "emergency"
+      ],
+      "transport": "car"
+    }
+  ],
+  "start_locations_are_templates": true,
+  "note": "start_location в этом файле — шаблон; при импорте зоны фактический старт всех инженеров заменяется координатами офиса, связанного с service_zones.office_address."
+}
